@@ -1,11 +1,5 @@
 <script>
-	export let name = 'Tarik Sahni';
+	import Home from 'Screens/home';
 </script>
 
-<style>
-	h1 {
-		color: purple;
-	}
-</style>
-
-<h1>Hello {name}!</h1>
+<Home />
