@@ -11,7 +11,8 @@ module.exports = {
 	resolve: {
 		alias: {
 			svelte: path.resolve('node_modules', 'svelte'),
-			Screens: path.resolve('src/screens')
+			Screens: path.resolve('src/screens'),
+			Static: path.resolve('static'),
 		},
 		extensions: ['.mjs', '.js', '.svelte'],
 		mainFields: ['svelte', 'browser', 'module', 'main']
@@ -43,7 +44,7 @@ module.exports = {
 					prod ? MiniCssExtractPlugin.loader : 'style-loader',
 					'css-loader'
 				]
-			}
+			},
 		]
 	},
 	mode,
