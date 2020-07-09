@@ -1,5 +1,6 @@
 <script>
     let src = 'static/images/tarik.png';
+    let resumePath = 'static/pdf/Tarik.pdf';
 </script>
 
 <style>
@@ -46,6 +47,19 @@
             max-width: 600px;
             margin: 0 auto;
         }
+        .description-text{
+            line-height: 2em;
+            margin: 1em 0 1.5em 0;
+        }
+        .about-me-container{
+            height: 4.8em;
+            border-radius: 2.4em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 2.4em;
+            width: max-content;
+        }
     }
 
     @media (max-width: 991px)  {
@@ -61,6 +75,7 @@
         }
         .image-container-mobile{
             justify-self: center;
+            align-self: flex-end;
             height: 16em;
             width: 16em;
             border-radius: 50%;
@@ -97,17 +112,20 @@
         .intro-section p{
             text-align: center;
         }
-    }
 
-
-    .about-me-container{
-        height: 4.8em;
-        border-radius: 2.4em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0 2.4em;
-        width: max-content;
+        .description-text{
+            line-height: 2em;
+            margin: 1em 0;
+        }
+        .about-me-container{
+            height: 4em;
+            border-radius: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 2em;
+            width: max-content;
+        }
     }
 
     .hi-text{
@@ -115,9 +133,8 @@
         margin-bottom: 0.5em;
     }
 
-    .description-text{
-        line-height: 2em;
-        margin: 1em 0 1.5em 0;
+    .about-me-container a{
+        text-decoration: none;
     }
 
 </style>
@@ -140,7 +157,7 @@
                 </h1>
                 <p class="open-sans-font white-color fs-2 description-text">Creative and self-starting Front-End Developer with 2+ years experience building stable E2E websites and apps in fast-paced, collaborative environments with great performance and SEO. Highly skilled in HTML/CSS/JavaScript and working knowledge of Web frameworks. Well-versed in Scrum and Agile.</p>
                 <div class="about-me-container yellow-color-background">
-                    <span class="white-color upper-case fs-2 fw-medium" >more about me</span>
+                    <a href={resumePath} download="Tarik_Sahni_Resume"><span class="white-color upper-case fs-2 fw-medium" >Download Resume &nbsp; 💻</span></a>
                 </div>
             </div>
         </div>
