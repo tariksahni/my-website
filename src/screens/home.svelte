@@ -8,39 +8,97 @@
         width: 100vw;
         background-color: #111;
     }
-    .image-frame{
-        position: fixed;
-        height: 200vh;
-        width: 100vw;
-        transform: rotate(-15deg);
-        left: -83%;
-        top: -50%;
+    @media (min-width: 991px)  {
+        .image-frame{
+            position: fixed;
+            height: 200vh;
+            width: 100vw;
+            transform: rotate(-15deg);
+            left: -83%;
+            top: -50%;
+        }
+        .content-container{
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            display: grid;
+            grid-template-columns: 1.5fr 3fr;
+        }
+        .image-container{
+            margin-left: 3em;
+            height: calc(100% - 6em);
+            z-index: 100;
+            box-shadow: 0 0 7px rgba(0,0,0,.9);
+            background-color: #111;
+            border-radius: 1.5em;
+        }
+        .image-container img{
+            border-radius: 1.5em;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        .image-container-mobile{
+            display: none;
+        }
+
+        .intro-section{
+            max-width: 600px;
+            margin: 0 auto;
+        }
     }
-    .content-container{
-        height: 100%;
-        width: 100%;
-        align-items: center;
-        display: grid;
-        grid-template-columns: 1.5fr 3fr;
+
+    @media (max-width: 991px)  {
+        .image-frame{
+            display: none;
+        }
+        .content-container{
+            height: 100%;
+            width: 100%;
+        }
+        .image-container{
+            display: none;
+        }
+        .image-container-mobile{
+            justify-self: center;
+            height: 16em;
+            width: 16em;
+            border-radius: 50%;
+            z-index: 100;
+            box-shadow: 0 0 7px rgba(0,0,0,.9);
+            background-color: #111;
+            border: 4px solid #252525;
+        }
+        .image-container-mobile img{
+            border-radius: 50%;
+            object-position: 50% 10%;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        .home-page-details{
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            display: grid;
+            grid-template-rows: 1fr 2fr;
+        }
+
+        .intro-section{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            padding: 0 1.6em;
+            justify-self: center;
+            align-self: center;
+            max-width: 400px;
+        }
+        .intro-section p{
+            text-align: center;
+        }
     }
-    .image-container{
-        margin-left: 3em;
-        height: calc(100% - 6em);
-        z-index: 100;
-        box-shadow: 0 0 7px rgba(0,0,0,.9);
-        background-color: #111;
-        border-radius: 1.5em;
-    }
-    .image-container img{
-        border-radius: 1.5em;
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-    }
-    .intro-section{
-        max-width: 600px;
-        margin: 0 auto;
-    }
+
 
     .about-me-container{
         height: 4.8em;
@@ -71,6 +129,9 @@
             <img src={src} alt="This is my personal image" title="tarik-sahni" aria-hidden="true" role="presentation"/>
         </div>
         <div class="home-page-details">
+            <div class="image-container-mobile">
+                <img src={src} alt="This is my personal image" title="tarik-sahni" aria-hidden="true" role="presentation"/>
+            </div>
             <div class="intro-section">
                 <h6 class="open-sans-font upper-case hi-text fs-3 fw-normal">Hi there ! &#128075;</h6>
                 <h1 class="yellow-color poppins-font upper-case fw-bold fs-5">
