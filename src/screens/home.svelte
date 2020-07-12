@@ -1,5 +1,7 @@
 <script>
-    let src = 'static/images/tarik.png';
+    let src1 = 'static/images/tarik.png';
+    let src = 'static/images/tarik1.jpg';
+    let src2 = 'static/images/tarik2.jpg';
     let resumePath = 'static/pdf/Tarik.pdf';
 </script>
 
@@ -27,7 +29,7 @@
         }
         .image-container{
             margin-left: 3em;
-            height: calc(100% - 6em);
+            height: calc(100vh - 6em);
             z-index: 100;
             box-shadow: 0 0 7px rgba(0,0,0,.9);
             background-color: #111;
@@ -147,7 +149,7 @@
         </div>
         <div class="home-page-details">
             <div class="image-container-mobile">
-                <img src={src} alt="This is my personal image" title="tarik-sahni" aria-hidden="true" role="presentation"/>
+                <img src={src1} alt="This is my personal image" title="tarik-sahni" aria-hidden="true" role="presentation"/>
             </div>
             <div class="intro-section">
                 <h6 class="open-sans-font upper-case hi-text fs-3 fw-normal">Hi there ! &#128075;</h6>

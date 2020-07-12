@@ -19,6 +19,10 @@
 	}
 	:global(.yellow-color){
 		color: #ffb400;
+        /*color: #8a2be2;*/
+        /*color: #6957af;*/
+        /*color: #9acd32;*/
+        /*color: #fa5b0f;*/
 	}
 	:global(.white-color){
 		color: #fff;
@@ -28,6 +32,10 @@
 	}
 	:global(.yellow-color-background){
 		background-color: #ffb400;
+        /*background-color: #8a2be2;*/
+        /*background-color: #6957af;*/
+        /*background-color: #9acd32;*/
+        /*background-color: #fa5b0f;*/
 	}
 	@media (max-width: 991px)  {
 		:global(.fs-2){
