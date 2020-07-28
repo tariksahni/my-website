@@ -145,7 +145,7 @@
     <div class="image-frame yellow-color-background"></div>
     <div class="content-container">
         <div class="image-container">
-            <img src={src} alt="This is my personal image" title="tarik-sahni" aria-hidden="true" role="presentation"/>
+            <img src={src1} alt="This is my personal image" title="tarik-sahni" aria-hidden="true" role="presentation"/>
         </div>
         <div class="home-page-details">
             <div class="image-container-mobile">
