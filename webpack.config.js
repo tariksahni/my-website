@@ -13,6 +13,7 @@ module.exports = {
 			svelte: path.resolve('node_modules', 'svelte'),
 			Screens: path.resolve('src/screens'),
 			Static: path.resolve('static'),
+			Constants: path.resolve('src/constants'),
 		},
 		extensions: ['.mjs', '.js', '.svelte'],
 		mainFields: ['svelte', 'browser', 'module', 'main']

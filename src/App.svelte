@@ -1,5 +1,6 @@
 <script>
 	import Home from 'Screens/home';
+	import Header from 'Screens/header';
 </script>
 
 <style>
@@ -88,3 +89,4 @@
 </style>
 
 <Home />
+<Header />

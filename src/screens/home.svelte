@@ -1,7 +1,5 @@
 <script>
-    let src1 = 'static/images/tarik.png';
-    let src = 'static/images/tarik1.jpg';
-    let src2 = 'static/images/tarik2.jpg';
+    let src = 'static/images/tarik.png';
     let resumePath = 'static/pdf/Tarik.pdf';
 </script>
 
@@ -145,11 +143,11 @@
     <div class="image-frame yellow-color-background"></div>
     <div class="content-container">
         <div class="image-container">
-            <img src={src1} alt="This is my personal image" title="tarik-sahni" aria-hidden="true" role="presentation"/>
+            <img src={src} alt="This is my personal image" title="tarik-sahni" aria-hidden="true" role="presentation"/>
         </div>
         <div class="home-page-details">
             <div class="image-container-mobile">
-                <img src={src1} alt="This is my personal image" title="tarik-sahni" aria-hidden="true" role="presentation"/>
+                <img src={src} alt="This is my personal image" title="tarik-sahni" aria-hidden="true" role="presentation"/>
             </div>
             <div class="intro-section">
                 <h6 class="open-sans-font upper-case hi-text fs-3 fw-normal">Hi there ! &#128075;</h6>
