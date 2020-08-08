@@ -29,11 +29,11 @@
             display: none;
         }
 
-        li.icon-box:hover{
+        li.icon-box:hover {
             background-color: #ffb400;
         }
 
-        li.icon-box{
+        li.icon-box {
             width: 50px;
             height: 50px;
             list-style: none;
@@ -46,7 +46,7 @@
             background: #2b2a2a;
         }
 
-        a{
+        a {
             display: block;
             padding: 0;
             width: 50px;
@@ -54,7 +54,7 @@
             text-decoration: none;
         }
 
-        a:hover h2{
+        a:hover h2 {
             opacity: 1;
             right: 27px;
             margin: 0;
@@ -94,11 +94,18 @@
         }
     }
 
+    @media (max-width: 991px) {
+        .header-desktop {
+            display: none;
+        }
+    }
+
 </style>
 
 <header class="header" id="header">
 
-    <ul class="icon-menu">
+    <!-- Desktop Page -->
+    <ul class="icon-menu header-desktop">
         <li class="icon-box active">
             <i class="fa fa-github-alt"></i>
             <a href={GITHUB_URL} target="_blank">
@@ -139,13 +146,37 @@
             <span></span>
             <span></span>
             <ul class="list-unstyled" id="menu">
-                <li class="active"><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
-                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
-                <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
-                <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
-                <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+                <li class="active">
+                    <a href="index.html">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                     </a>
+                </li>
+                <li>
+                    <a href={GITHUB_URL} target="_blank">
+                        <i class="fa fa-user"></i
+                        ><span>About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href={GITHUB_URL} target="_blank">
+                        <i class="fa fa-folder-open"></i>
+                        <span>Portfolio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href={GITHUB_URL} target="_blank">
+                        <i class="fa fa-envelope-open"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+                <li>
+                    <a href={GITHUB_URL} target="_blank">
+                        <i class="fa fa-comments"></i>
+                        <span>Blog</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
-    <!-- Mobile Menu Ends -->
 </header>
