@@ -1,5 +1,5 @@
 <script>
-    let src = 'static/images/tarik.png';
+    let src = 'static/images/Tarik.jpg';
     let resumePath = 'static/pdf/Tarik.pdf';
 </script>
 
