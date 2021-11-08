@@ -1,4 +1,5 @@
 <script>
+	import { Link } from "svelte-navigator";
     let src = 'static/images/Tarik.jpg';
     let resumePath = 'static/pdf/Tarik.pdf';
 </script>
@@ -59,6 +60,9 @@
             align-items: center;
             padding: 0 2.4em;
             width: max-content;
+        }
+        .mt-2{
+            margin-top: 2.4em;
         }
     }
 
@@ -155,9 +159,12 @@
                     <span class="my-details white-color">I'm</span>
                     Tarik Sahni
                 </h1>
-                <p class="open-sans-font white-color fs-2 description-text">Creative and self-starting Front-End Developer with 2+ years experience building stable E2E websites and apps in fast-paced, collaborative environments with great performance and SEO. Highly skilled in HTML/CSS/JavaScript and working knowledge of Web frameworks. Well-versed in Scrum and Agile.</p>
+                <p class="open-sans-font white-color fs-2 description-text">Creative and self-starting Front-End Developer with 4+ years experience building stable E2E websites and apps in fast-paced, collaborative environments with great performance and SEO. Highly skilled in HTML/CSS/JavaScript and working knowledge of Web frameworks. Well-versed in Scrum and Agile.</p>
                 <div class="about-me-container yellow-color-background">
                     <a href={resumePath} download="Tarik_Sahni_Resume"><span class="white-color upper-case fs-2 fw-medium" >Download Resume &nbsp; 💻</span></a>
+                </div>
+                <div class="about-me-container mt-2 yellow-color-background">
+                    <Link to="connect"><span class="white-color upper-case fs-2 fw-medium" >Let's connect on blockchain Ξ</span></Link>
                 </div>
             </div>
         </div>

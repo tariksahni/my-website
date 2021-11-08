@@ -1,6 +1,8 @@
 <script>
+	import { Router, Route } from "svelte-navigator";
 	import Home from 'Screens/home';
 	import Header from 'Screens/header';
+	import ConnectMe from 'Screens/connectBlockchain';
 </script>
 
 <style>
@@ -79,6 +81,14 @@
 	}
 
 </style>
+<Router>
+    <Route path="/">
+        <Home />
+    </Route>
+    <Route path="connect">
+        <ConnectMe />
+    </Route>
+    <Header />
+</Router>
 
-<Home />
-<Header />
+

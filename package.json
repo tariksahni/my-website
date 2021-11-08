@@ -1,5 +1,5 @@
 {
-  "name": "svelte-app",
+  "name": "tariksahni",
   "version": "1.0.0",
   "author": "Tarik Sahni",
   "devDependencies": {
@@ -23,6 +23,7 @@
     "storybook": "start-storybook"
   },
   "dependencies": {
-    "emotion": "^10.0.27"
+    "emotion": "^10.0.27",
+    "svelte-navigator": "^3.1.5"
   }
 }
